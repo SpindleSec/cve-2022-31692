@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head></head>
+<body><h1>CVE-2022-31692</h1>
+<p>Username = user<br>Password = pass</p>
+<p><a href="/admin">Admin page</a> - requires authz with the admin role (which the supplied demo user doesn't have)</p>
+<p><a href="/forward">Forward page</a> - requires no authn/authz. a server-side forward to the admin page. Under vulnerable conditions, this bypasses authentication</p>
+</body>
+</html>
